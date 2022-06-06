@@ -58,7 +58,10 @@ export default function QuizForm() {
 		}
 	};
 	return (
-		<div className='app'>
+		<body className='quiz-body'>
+			
+		
+		<div className='quiz'>
 			{showScore ? (
 				<div className='score-section'>
 					You scored {score} out of {questions.length}
@@ -73,11 +76,12 @@ export default function QuizForm() {
 					</div>
 					<div className='answer-section'>
 						{questions[currentQuestion].answerOptions.map((answerOption) => (
-							<button onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
+							<button className='quiz-button' onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
 						))}
 					</div>
 				</>
 			)}
 		</div>
+		</body>
 	);
 }
