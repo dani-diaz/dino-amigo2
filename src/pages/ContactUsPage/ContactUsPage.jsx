@@ -1,5 +1,5 @@
-export default function ClassroomPage() {
+export default function ContactUsPage() {
   return (
-    <h1>Classroom</h1>
+    <h1>Contact Us</h1>
   );
 }

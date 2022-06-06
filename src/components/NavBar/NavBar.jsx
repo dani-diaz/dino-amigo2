@@ -16,11 +16,13 @@ export default function NavBar({ user, setUser }) {
       &nbsp; | &nbsp;
       <Link to="/about">About Us</Link>
       &nbsp; | &nbsp;
-      <Link to="/classroom">Classroom</Link>
+      <Link to="/classes">Classes</Link>
       &nbsp; | &nbsp;
       <Link to="/testimonies">Testimonies</Link>
       &nbsp; | &nbsp;
       <Link to="/contact">Contact Us</Link>
+      &nbsp; | &nbsp;
+      <Link to="/classroom">My Classroom</Link>
       &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
       <span>Welcome, {user.name}</span>
       &nbsp; | &nbsp;

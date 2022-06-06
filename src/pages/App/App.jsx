@@ -5,8 +5,9 @@ import AuthPage from '../AuthPage/AuthPage';
 import HomePage from '../HomePage/HomePage';
 import AboutUsPage from '../AboutUsPage/AboutUsPage';
 import ContactUsPage from '../ContactUsPage/ContactUsPage';
-import TestimonyPage from '../TestimonyPage/TestimonyPage';
-import ClassroomPage from '../ClassroomPage/ClassroomPage';
+import TestimoniesPage from '../TestimoniesPage/TestimoniesPage';
+import ClassesPage from '../ClassesPage/ClassesPage';
+import MyClassroomPage from '../MyClassroomPage/MyClassroomPage';
 import NavBar from '../../components/NavBar/NavBar';
 import './App.css';
 
@@ -23,8 +24,9 @@ function App() {
             <Route path="/home" element={<HomePage />} />
             <Route path="/about" element={<AboutUsPage />} />
             <Route path="/contact" element={<ContactUsPage />} />
-            <Route path="/classroom" element={<ClassroomPage />} />
-            <Route path="/testimonies" element={<TestimonyPage />} />
+            <Route path="/classes" element={<ClassesPage />} />
+            <Route path="/testimonies" element={<TestimoniesPage />} />
+            <Route path="/classroom" element={<MyClassroomPage />} />
           </Routes>
         </>
         :
