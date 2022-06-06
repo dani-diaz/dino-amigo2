@@ -1,34 +1,117 @@
-# MERN-Stack Infrastructure
+<div align="center">
+   <img src="https://i.imgur.com/SMp0P2o.png"/>
+<div align="center">
+  <h1>P4 - Dino Amigo</h1>
+<h1>
+<a href="https://github.com/dani-diaz" target="_blank">
+    <img src="https://img.shields.io/badge/-Github:%20github.com/danidiaz-darkgreen?style=flat&logo=medium"/>
+</a>
+<a href="https://www.linkedin.com/in/danidiaz8/" target="_blank">
+     <img src="https://img.shields.io/badge/-LinkedIn:%20linkedin.com/in/danidiaz8-blue?style=flat&``logo=Linkedin&logoColor=white">
+</a> 
+   <a href="mailto:daniela.diaz0808@gmail.com" target="_blank">
+      <img src="https://img.shields.io/badge/-GMail:%20daniela.diaz0808@gmail.com-c14438?style=flat&logo=Gmail&``logoColor=white">
+</a>
+</h1>
+<br>
+<br>
+<br>
 
-Clone this repo to provide the starter code for a comprehensive MERN-Stack project including token-based authentication.
+# 📓 Description
+
+An interactive site for children to learn Spanish for learning all levels and ages.
+
+<br>
+<br>
+<br>
+
+# 📌 Objective
+
+Create a user-friendly site for children to navigate and lear Spanish.
+<details>
+<summary> 🔗 Link to Dino Amigo site</summary>
+
+https://dascoop.herokuapp.com/
+
+</details>
+
+<details>
+<summary> 📋 How to use site</summary>
+
+🏁 Users sign up or log in to Dino Amigo, then they choose from the different lessons available.
 
 
-<h1>Using mern-infrastructure to Create MERN-Stack Projects in the Future</h1>
+🖱 Video lessons teach users a variety of words and/or phases in Spanish by saying them in English first and the in Spanish while also showing and example of the word.
 
-Here's the process to create a new MERN-Stack project that starts with the infrastructure code:
 
-Clone the mern-infrastructure repo: git clone <url of mern-infrastructure> <name-of-project>
+⭐️ Users can also leave their testimonies base on their experience with the teachers, lessons and material.
 
-Note that the folder created will be same as <name-of-project> instead of mern-infrastructure
 
-cd <name-of-project>
 
-Install the Node modules: npm i
+</details>
 
-Create a .env (touch .env) and add entries for DATABASE_URL and SECRET
+<br>
+<br>
+<br>
 
-Update the "name": "mern-infrastructure" in package.json to the name of your project.
+# ERD
 
-Create a new repo on your personal GH account.
+<img src="https://i.imgur.com/fOq8Gax.png">  
 
-Copy the new GH repo's URL.
+<br>
+<br>
+<br>
 
-Update the remote's URL: git remote set-url origin <paste the copied GH url>
+# Wireframes
+| Description | Screenshot |
+|------------ | ------------|
+| <h3 align="center">Home Page</h3> | <img src="https://i.imgur.com/vACgiug.png">
+| <h3 align="center">About Us</h3> | <img src="https://i.imgur.com/zZHss2w.png" >
+| <h3 align="center">Lesson Info </h3> |  <img src="https://i.imgur.com/STMjjYZ.png">
+| <h3 align="center">Lesson Video</h3> | <img src="https://i.imgur.com/R3hrzz0.png">
+| <h3 align="center">Student Progress</h3> | <img src="https://i.imgur.com/ulgvVPT.png">
+| <h3 align="center">Quizzes</h3> | <img src="https://i.imgur.com/JgN21aY.png">
+| <h3 align="center">Testimonies</h3> | <img src="https://i.imgur.com/WYS2JWk.png">
+| <h3 align="center">Contact Us</h3> | <img src="https://i.imgur.com/0AY7js1.png">
+| <h3 align="center">Footer</h3> | <img src="https://i.imgur.com/MQ5ZvxB.png">
+</details>
+<br>
+<br>
+<br>
+<br>
 
-Make the initial commit: git add -A && git commit -m "Initial commit"
+# Technologies Used
 
-Push for the first time: git push -u origin main
+![JavaScript](https://img.shields.io/badge/-JavaScript-333?style=flat&logo=javascript) 
+![HTML5](https://img.shields.io/badge/-HTML5-333?style=flat&logo=html5)
+![CSS3](https://img.shields.io/badge/-CSS-333?style=flat&logo=css3)
+![Trello](https://img.shields.io/badge/-Trello-333?style=flat&logo=trello)
+![Heroku](https://img.shields.io/badge/-Heroku-333?style=flat&logo=heroku)
+![Git](https://img.shields.io/badge/-Git-333?style=flat&logo=git)
+![Github](https://img.shields.io/badge/-GitHub-333?style=flat&logo=github)
+![VSCode](https://img.shields.io/badge/-VS_Code-333?style=flat&logo=visualstudio)
+![Python](https://img.shields.io/badge/-Python-333?style=flat&logo=python)
+![Django](https://img.shields.io/badge/-Django-333?style=flat&logo=django)
+![React](https://img.shields.io/badge/-React-333?style=flat&logo=react) 
+![Node](https://img.shields.io/badge/-Node.js-333?style=flat&logo=node.js)
+![AWS S3](https://img.shields.io/badge/-AWS_S3-333?style=flat&logo=amazons3)
+![JWT](https://img.shields.io/badge/-JSON_Web_Tokens-333?style=flat&logo=jsonwebtokens)
 
-Have fun coding your new project and don't forget to make frequent commits!
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-https://git.generalassemb.ly/SEI-CC/SEI-03-21-22/tree/main/work/w11/d3/03-mern-infrastructure-part-7
+# Next Steps
+
+### Upcoming Features
+
+- [ ] Allow users to book live Zoom lessons with teachers.
+
+- [ ] Allow users to purchase, printable material and merch.
+
+- [ ] Consuming an API to implement both these features.
