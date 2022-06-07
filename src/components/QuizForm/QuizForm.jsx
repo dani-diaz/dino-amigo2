@@ -82,6 +82,7 @@ export default function QuizForm() {
 				</>
 			)}
 		</div>
+		{/* <button className='Submitquiz' type='Submit' onClick={nextLesson}></button> */}
 		</body>
 	);
 }
