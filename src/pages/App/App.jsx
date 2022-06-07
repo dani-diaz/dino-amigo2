@@ -28,7 +28,7 @@ function App() {
             <Route path="/classes" element={<ClassesPage />} />
             <Route path="/testimonies" element={<TestimoniesPage />} />
             <Route path="/classroom" element={<MyClassroomPage />} />
-            <Route path="/classroom" element={<ContactForm />} />  
+            <Route path="/classroom" element={<ContactForm />} />   
           </Routes>
         </>
         :
