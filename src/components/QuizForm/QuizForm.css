@@ -12,28 +12,36 @@
   }
   
   .quiz-body {
-    background-color: #7cc6fe;
+    background-image: url(https://i.imgur.com/qbTeRAO.jpg);
+    background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 160vh;
+    margin: 10px 10px 10px 10px;
   }
   
   .quiz {
     background-color: #252d4a;
-    width: 450px;
-    min-height: 200px;
+    width: 650px;
+    min-height: 400px;
     height: min-content;
     border-radius: 15px;
     padding: 20px;
+    gap: 10px 30px;
     box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start; 
+    padding: 10px 10px 10px 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   
   .score-section {
     display: flex;
-    font-size: 24px;
+    font-size: 30px;
     align-items: center;
   }
   
@@ -48,11 +56,11 @@
   }
   
   .question-count span {
-    font-size: 28px;
+    font-size: 30px;
   }
   
   .question-text {
-    margin-bottom: 12px;
+    margin-bottom: 25px;
   }
   
   .timer-text {

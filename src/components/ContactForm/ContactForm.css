@@ -1,0 +1,116 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem;
+  background-color: #cff128;
+}
+
+.aforms {
+    display: flex;
+    justify-content: space-evenly;  
+}
+
+.contactinfo3 {
+    display: flex;
+    justify-content: space-evenly;  
+}
+
+.form1 {
+  width: 100%;
+  max-width: 600px;
+  height: 550px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  font-size: 0.95rem;
+  display: flex;
+  padding-top: 50px;
+  margin-top: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+ 
+}
+
+.form2 {
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-left: 150px;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    max-width: 600px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    font-size: 0.95rem;
+    align-items: center;
+    width: 950px;
+    height: 350px;
+
+}
+
+.dinopic {
+  width: 450px;
+  height: 700px;
+  top: 130px;
+  right: -40px;
+}
+
+.dinopic2 {
+    width: 750px;
+    height: 500px;
+  }
+
+.title2 {
+  color: #7e0d97;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.text {
+  color: rgb(2, 0, 0);
+  margin: 2.5rem 0 4rem 0;
+  font-size: 2rem;
+}
+
+.information {
+  display: flex;
+  color: rgb(5, 2, 2);
+  margin: 0.7rem 0;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.icon {
+  width: 28px;
+  margin-right: 0.7rem;
+  margin-left: 1.7rem;
+}
+
+input {
+    font-size: 1.5rem;  
+    margin-right: 0.7rem;
+    text-align: left;
+}
+
+.cbutton {
+    margin: 10vmin;
+    padding: 10vmin;
+    color: var(--white);
+    background-color: var(--green);
+    font-size: 4vmin;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1vmin solid var(--green-2);
+    cursor: pointer;
+    border-radius: 5px;
+  }
+.cut {
+    color: #7e0d97;
+    font-weight: 600;
+    align-items: center;
+    font-size: 10rem;
+    
+}

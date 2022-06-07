@@ -1,12 +1,12 @@
 :root {
   --yellow: #f1e608;
-  --green-1: #f1f50c;
-  --green-2: #bee6a7bd;
+  --green-1: #9ff37b;
+  --green-2: #70f424bd;
   --green-3: #6aea0977;
   --green-4: #380567;
   --green: #add313;
-  --text-light: #282c25;
-  --text-dark: #044206;
+  --text-light: #f2f7cf;
+  --text-dark: #030503;
 }
 
 *, *:before, *:after {

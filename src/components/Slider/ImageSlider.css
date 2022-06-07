@@ -1,11 +1,13 @@
 .slider {
     position: relative;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   
+  .sliderbox {
+      display: flex;
+      justify-content: center; 
+  } 
+
   .image {
     width: 1000px;
     height: 600px;
@@ -13,9 +15,6 @@
   }
   
   .right-arrow {
-    position: absolute;
-    top: 50%;
-    right: 32px;
     font-size: 3rem;
     color: #000;
     z-index: 10;
@@ -41,6 +40,6 @@
   
   .slide.active {
     opacity: 1;
-    transition-duration: 1s;
+    transition-duration: 2s;
     transform: scale(1.08);
   }

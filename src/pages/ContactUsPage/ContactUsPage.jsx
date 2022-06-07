@@ -1,5 +1,11 @@
+import ContactForm from '../../components/ContactForm/ContactForm';
+import React, { useState } from "react";
+
 export default function ContactUsPage() {
   return (
-    <h1>Contact Us</h1>
+    <>
+    <br />
+    <ContactForm />
+    </>
   );
 }

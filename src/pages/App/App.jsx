@@ -9,6 +9,7 @@ import TestimoniesPage from '../TestimoniesPage/TestimoniesPage';
 import ClassesPage from '../ClassesPage/ClassesPage';
 import MyClassroomPage from '../MyClassroomPage/MyClassroomPage';
 import NavBar from '../../components/NavBar/NavBar';
+import ContactForm from '../../components/ContactForm/ContactForm';
 import './App.css';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Route path="/classes" element={<ClassesPage />} />
             <Route path="/testimonies" element={<TestimoniesPage />} />
             <Route path="/classroom" element={<MyClassroomPage />} />
+            <Route path="/classroom" element={<ContactForm />} />  
           </Routes>
         </>
         :
