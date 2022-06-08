@@ -10,5 +10,7 @@ const Classes = require('./models/classes');
 const ContactUs = require('./models/contact');
 const Testimonies = require('./models/testimonies');
 const MyClassroom = require('./models/classroom');
+const TeachersList = require('./models/ourteachers');
+const TeacherBio = require('./models/ImTeacher');
 // Local variables will come in handy for holding retrieved documents
-let user, home, order, about, contact, classes, testimonies, classroom;
+let user, home, order, about, contact, classes, testimonies, classroom, ourteachers, ImTeacher;

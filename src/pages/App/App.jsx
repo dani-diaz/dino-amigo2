@@ -10,7 +10,10 @@ import ClassesPage from '../ClassesPage/ClassesPage';
 import MyClassroomPage from '../MyClassroomPage/MyClassroomPage';
 import NavBar from '../../components/NavBar/NavBar';
 import ContactForm from '../../components/ContactForm/ContactForm';
+import TeachersListPage from '../TeachersListPage/TeachersListPage';
+import TeacherBioPage from '../TeacherBioPage/TeacherBioPage';
 import './App.css';
+import { teachers } from "../../teacherData.js";
 
 function App() {
   const [user, setUser] = useState(getUser());
@@ -29,6 +32,8 @@ function App() {
             <Route path="/testimonies" element={<TestimoniesPage />} />
             <Route path="/classroom" element={<MyClassroomPage />} />
             <Route path="/classroom" element={<ContactForm />} />   
+            <Route path="/ourteachers" element={<TeachersListPage teachers={teachers} />} /> 
+            <Route path="/ImTeacher/:teacherName" element={<TeacherBioPage teachers={teachers} />} />
           </Routes>
         </>
         :

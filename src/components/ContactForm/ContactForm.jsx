@@ -62,7 +62,7 @@ const ContactForm = () => {
                 <input className="email" type="email" id="email" placeholder="email" required />
               </div>
               <div>
-                <input className="message" id="message" placeholder="message" required />
+                <input className="message" type="textarea" id="message" placeholder="message" required />
               </div>
               <button className="button1" type="submit">{status}</button>
             </div>
