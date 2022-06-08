@@ -22,14 +22,14 @@
   }
   
   .quiz {
-    background-color: #252d4a;
+    background-color: #490685;
     width: 650px;
     min-height: 400px;
     height: min-content;
     border-radius: 15px;
     padding: 20px;
     gap: 10px 30px;
-    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 42px 0px rgba(41, 3, 66, 0.75);
     display: flex;
     justify-content: flex-start; 
     padding: 10px 10px 10px 10px;
@@ -42,7 +42,7 @@
   
   .score-section {
     display: flex;
-    font-size: 30px;
+    font-size: 60px;
     align-items: center;
   }
   
@@ -57,11 +57,12 @@
   }
   
   .question-count span {
-    font-size: 30px;
+    font-size: 40px;
   }
   
   .question-text {
     margin-bottom: 25px;
+    font-size: 40px;
   }
   
   .timer-text {
@@ -86,13 +87,13 @@
     width: 100%;
     font-size: 16px;
     color: #ffffff;
-    background-color: #252d4a;
+    background-color: #622197;
     border-radius: 15px;
     display: flex;
     padding: 5px;
     justify-content: flex-start;
     align-items: center;
-    border: 5px solid #234668;
+    border: 5px solid #330457;
     cursor: pointer;
   }
   
@@ -105,7 +106,7 @@
   }
   
   button:hover {
-    background-color: #555e7d;
+    background-color: #40d2b7;
   }
   
   button:focus {

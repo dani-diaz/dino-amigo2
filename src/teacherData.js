@@ -42,5 +42,26 @@ export const teachers = [
     name: "EJ",
     bio: "Rosina was born in Honk Kong, and raised in Venezuela where she received a law degree and a fashion design degree. She was a girl scout when she was a teenager which left her with many fond memories. Early on she volunteered as a Spanish tutor in a Chinese-Spanish Adult school in Venezuela. Rosina also volunteers at Canal Alliance, a non-profit organization that assists the immigrant community. Her favorite past-times are knitting, and exploring new places and foods. She is a big foodie!"
 },
-   
+
+{
+    teacherImage:
+        "https://i.imgur.com/4rHtDAo.png",
+    name: "Justin",
+    bio: "Hello! My name is Tiffani Morgan and I am the Assistant Director here at All About Kids Anderson! I am currently in the prosses of obtaining my Child Development Associates (CDA). I also have many trainings and certificates I have worked on gaining over the years.  I have one son and one on the way! My older son keeps me busy and on my toes at at all times! When I am not at work, you might catch me at the park or outside in general. We love to be outside. I love working with children, and watching them grow and thrive!! All About Kids is an amazing place to bring your children, not only is it a daycare, but its a wonderful Green Learning Center that I am happy my children get to attend. As the Assistant Director, my goal is to develop a relationship with each of the children and their families. My hope is to make everyone joining our AAKA family comfortable and safe. I want to make your time spent here educational, exciting, fun, and memorable while you are here."
+},
+
+{
+    teacherImage:
+        "https://i.imgur.com/uQyKdBB.png",
+    name: "JR",
+    bio: "Hi, my name is Alaina. I have always worked with children in various ways such as helping my grandma at her in-home daycare, church nurseries, youth groups, babysitting to a full time job. It has always been my passion. I love seeing children learn new things and the excitement that it brings. I have two wonderful children of my  own. The oldest is a full of spunk, and funny little girl. My youngest is my son who is super smiley all day long. We love to be outdoors, camping, taking walks, swimming or playing. I love to swing dance, line dance, and scrap book whenever I can make the time. Each year I make a bucket list of things I want to do. Basically full of fall activities because I love the fall!"
+},
+
+{
+    teacherImage:
+        "https://i.imgur.com/AZqLhR0.png",
+    name: "Chris",
+    bio: "Hi, I am Shannon. I grew up in a small town in Indianan. I moved to Cincinnati with my husband and we now have a very energetic boy named Oheneba. Outside of school work we spend a lot of time together shopping, parks, and a lot of “dinosaur” walks! I have over seven years of early childhood experience from being a nanny, floater, and a lead teacher. My favorite thing about working in education field is the “lightbulb moment.” When a child finally understands or completes  a task they have been working on. I look forward to working with you and your children. I’m excited to be a part of the All About Kids team!"
+},
+
 ];

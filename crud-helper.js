@@ -6,11 +6,14 @@ require('./config/database');
 const User = require('./models/user');
 const Home = require('./models/home');
 const AboutUs = require('./models/about');
-const Classes = require('./models/classes');
+const NewClass = require('./models/classes');
 const ContactUs = require('./models/contact');
 const Testimonies = require('./models/testimonies');
-const MyClassroom = require('./models/classroom');
+const MyClassroom = require('./models/class');
 const TeachersList = require('./models/ourteachers');
 const TeacherBio = require('./models/ImTeacher');
+const Quiz = require('./models/quiz');
+const Lesson = require('./models/lesson');
 // Local variables will come in handy for holding retrieved documents
-let user, home, order, about, contact, classes, testimonies, classroom, ourteachers, ImTeacher;
+let user, home, about, contact, classes, testimony, classroom, ourteachers, ImTeacher, quiz, lesson;
+let users, contacts, testimonies, classrooms, quizzes, lessons;

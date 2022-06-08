@@ -4,39 +4,39 @@ import "./QuizForm.css";
 export default function QuizForm() {
 	const questions = [
 		{
-			questionText: 'What is the capital of France?',
+			questionText: 'How do you say Hello in Spanish?',
 			answerOptions: [
-				{ answerText: 'New York', isCorrect: false },
-				{ answerText: 'London', isCorrect: false },
-				{ answerText: 'Paris', isCorrect: true },
-				{ answerText: 'Dublin', isCorrect: false },
+				{ answerText: 'Ola', isCorrect: false },
+				{ answerText: 'Adios', isCorrect: false },
+				{ answerText: 'Hola', isCorrect: true },
+				{ answerText: 'Bueno', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'Who is CEO of Tesla?',
+			questionText: 'How do you say "Red" in Spanish?',
 			answerOptions: [
-				{ answerText: 'Jeff Bezos', isCorrect: false },
-				{ answerText: 'Elon Musk', isCorrect: true },
-				{ answerText: 'Bill Gates', isCorrect: false },
-				{ answerText: 'Tony Stark', isCorrect: false },
+				{ answerText: 'Azul', isCorrect: false },
+				{ answerText: 'Rojo', isCorrect: true },
+				{ answerText: 'Amarillo', isCorrect: false },
+				{ answerText: 'Blanco', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'The iPhone was created by which company?',
+			questionText: 'How do you say "5" in Spanish?',
 			answerOptions: [
-				{ answerText: 'Apple', isCorrect: true },
-				{ answerText: 'Intel', isCorrect: false },
-				{ answerText: 'Amazon', isCorrect: false },
-				{ answerText: 'Microsoft', isCorrect: false },
+				{ answerText: 'Cinco', isCorrect: true },
+				{ answerText: 'Cuatro', isCorrect: false },
+				{ answerText: 'Ocho', isCorrect: false },
+				{ answerText: 'Dos', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'How many Harry Potter books are there?',
+			questionText: 'How do you say "Dog" in Spanish?',
 			answerOptions: [
-				{ answerText: '1', isCorrect: false },
-				{ answerText: '4', isCorrect: false },
-				{ answerText: '6', isCorrect: false },
-				{ answerText: '7', isCorrect: true },
+				{ answerText: 'Oso', isCorrect: false },
+				{ answerText: 'Zorro', isCorrect: false },
+				{ answerText: 'Gato', isCorrect: false },
+				{ answerText: 'Perro', isCorrect: true },
 			],
 		},
 	];
