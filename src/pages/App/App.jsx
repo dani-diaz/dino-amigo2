@@ -16,7 +16,7 @@ import LectureHistoryPage from '../LectureHistoryPage/LectureHistoryPage';
 import NewLecturePage from '../NewLecturePage/NewLecturePage';
 import './App.css';
 import { teachers } from "../../teacherData.js";
-import { questions } from "../../../seed.js";
+import { questions } from "../../quiz.js";
 
 function App() {
   const [user, setUser] = useState(getUser());
