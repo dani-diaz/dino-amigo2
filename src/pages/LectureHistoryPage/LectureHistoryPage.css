@@ -1,13 +1,13 @@
-.ClassHistoryPage {
+.LectureHistoryPage {
     height: 100%;
     display: grid;
     grid-template-columns: 1.6fr 3.5fr 3fr;
     grid-template-rows: 1fr;
-    background-color: var(--yello);
+    background-color: var(--yellow);
     border-radius: 2vmin;
   }
   
-  .ClassHistoryPage aside {
+  .LectureHistoryPage aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;

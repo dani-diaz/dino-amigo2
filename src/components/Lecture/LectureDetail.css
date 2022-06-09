@@ -1,4 +1,4 @@
-.ClassDetail {
+.LectureDetail {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -7,27 +7,27 @@
     color: var(--text-light);
   }
   
-  .ClassDetail .section-heading {
+  .LectureDetail .section-heading {
     width: 100%
   }
   
-  .ClassDetail .line-lesson-container {
+  .LectureDetail .line-lesson-container {
     margin-top: 3vmin;
     justify-content: flex-start;
     height: calc(100vh - 18vmin);
     width: 100%;
   }
   
-  .ClassDetail .lessons-done {
+  .LectureDetail .lessons-done {
     width: 100%;
     display: grid;
     grid-template-columns: 18.35vw 5.75vw 5.25vw;
     padding: 1vmin 0;
     color: var(--text-light);
-    border-top: .1vmin solid var(--tan-3);
+    border-top: .1vmin solid var(--green-3);
   }
   
-  .ClassDetail .total span {
+  .LectureDetail .total span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,12 +35,12 @@
     color: var(--text-dark);
   }
   
-  .ClassDetail .total span.right {
+  .LectureDetail .total span.right {
     display: flex;
     justify-content: flex-end;
   }
   
-  .ClassDetail .no-lesson {
+  .LectureDetail .no-lesson {
     position: absolute;
     top: 50vh;
     font-size: 2vmin;

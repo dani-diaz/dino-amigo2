@@ -11,9 +11,8 @@ import NavBar from '../../components/NavBar/NavBar';
 import ContactForm from '../../components/ContactForm/ContactForm';
 import TeachersListPage from '../TeachersListPage/TeachersListPage';
 import TeacherBioPage from '../TeacherBioPage/TeacherBioPage';
-import ClassesPage from '../../components/ClassesPage/ClassesPage';
-import ClassHistoryPage from '../../components/ClassHistoryPage/ClassHistoryPage';
-import NewClassPage from '../../components/NewClassPage/NewClassPage';
+import LectureHistoryPage from '../LectureHistoryPage/LectureHistoryPage';
+import NewLecturePage from '../NewLecturePage/NewLecturePage';
 import './App.css';
 import { teachers } from "../../teacherData.js";
 
@@ -30,14 +29,13 @@ function App() {
             <Route path="/home" element={<HomePage />} />
             <Route path="/about" element={<AboutUsPage />} />
             <Route path="/contact" element={<ContactUsPage />} />
-            <Route path="/classes" element={<ClassesPage />} />
             <Route path="/testimonies" element={<TestimoniesPage />} />
-            <Route path="/classroom" element={<MyClassroomPage />} />
-            <Route path="/classroom" element={<ContactForm />} />   
-            <Route path="/ourteachers" element={<TeachersListPage teachers={teachers} />} /> 
+            <Route path="/MyClassroom" element={<MyClassroomPage />} />
+            <Route path="/ContactForm" element={<ContactForm />} />   
+            <Route path="/OurTeachers" element={<TeachersListPage teachers={teachers} />} /> 
             <Route path="/ImTeacher/:teacherName" element={<TeacherBioPage teachers={teachers} />} />
-            <Route path="/classes/new" element={<NewCLassPage user={user} setUser={setUser} />} />
-            <Route path="/classes" element={<ClassHistoryPage user={user} setUser={setUser} />} />
+            <Route path="/classes/new" element={<NewLecturePage user={user} setUser={setUser} />} />
+            <Route path="/classes" element={<LectureHistoryPage user={user} setUser={setUser} />} />
           </Routes>
         </>
         :

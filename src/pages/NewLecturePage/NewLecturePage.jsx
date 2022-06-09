@@ -1,20 +1,20 @@
 import { useState, useEffect, useRef } from 'react';
 import * as lessonsAPI from '../../utilities/lessons-api';
-import * as classesAPI from '../../utilities/classes-api';
-import './NewClassPage.css';
+import * as lecturesAPI from '../../utilities/lectures-api';
+import './NewLecturePage.css';
 import { Link, useNavigate } from 'react-router-dom';
-import ClassList from '../../components/ClassList/ClassList';
+import LibraryList from '../../components/LibraryList/LibraryList';
 import LevelList from '../../components/LevelList/LevelList';
-import ClassDetail from '../../components/ClassDetail/ClassDetail';
+import LectureDetail from '../../components/LectureDetail/LectureDetail';
 import UserLogOut from '../../components/UserLogOut/UserLogOut';
 import QuizForm from '../../components/QuizForm/QuizForm';
 import React, { useState } from 'react';
 
 
 
-export default function NewClassPage({ user, setUser }) {
+export default function NewLecturePage({ user, setUser }) {
 
-  const [classLessons, setClassLesson] = useState([]);
+  const [libraryLessons, setLibraryLesson] = useState([]);
   const [activeLev, setActiveLev] = useState('');
   const [binder, setBinder] = useState(null);
   const levelsRef = useRef([]);
@@ -24,33 +24,34 @@ export default function NewClassPage({ user, setUser }) {
     async function getLessons() {
       const lessons = await lessonsAPI.getAll();
       levelsRef.current = [...new Set(lessons.map(lesson => lesson.level.name))];
-      setClassLesson(lessons);
+      setLibraryLesson(lessons);
       setActiveLev(levelsRef.current[0]);
     }
     getLessons();
     async function getBinder() {
-      const binder = await classesAPI.getBinder();
+      const binder = await lecturesAPI.getBinder();
       setBinder(binder);
     }
     getBinder();
   }, []);
 
-  async function handleAddToClass(lessonId) {
-    const binder = await classesAPI.addLessonToBinder(lessonId);
+  async function handleAddToLecture(lessonId) {
+    const binder = await lecturesAPI.addLessonToBinder(lessonId);
     setBinder(binder);
+  }
 
   async function handleChangeQty(lessonId, newQty) {
-    const updatedBinder = await classesAPI.setLessonQtyInBinder(lessonId, newQty);
+    const updatedBinder = await lecturesAPI.setLessonQtyInBinder(lessonId, newQty);
     setBinder(updatedBinder);
   }
 
   async function handleSave() {
-    await classesAPI.save();
-    navigate('/classes');
+    await lecturesAPI.save();
+    navigate('/lectures');
   }
 
   return (
-    <main className="NewClassPage">
+    <main className="NewLecturePage">
         <h1>Lessons</h1>
         <p> Why cartoons and music?    
             Kids love cartoons and music so why not mix them to create a powerful learning tool?    
@@ -64,19 +65,18 @@ export default function NewClassPage({ user, setUser }) {
           activeLev={activeLev}
           setActiveLev={setActiveLev}
         />
-        <Link to="/classes" className="button btn-sm">PREVIOUS CLASSES</Link>
+        <Link to="/lectures" className="button btn-sm">PREVIOUS CLASSES</Link>
         <UserLogOut user={user} setUser={setUser} />
       </aside>
-      <ClassList
-        classLessons={classLessons.filter(lesson => lesson.level.name === activeLev)}
-        handleAddToClass={handleAddToClass}
+      <LibraryList
+        libraryLessons={libraryLessons.filter(lesson => lesson.level.name === activeLev)}
+        handleAddToLecture={handleAddToLecture}
       />
-      <ClassDetail
-        class={binder}
+      <LectureDetail
+        lecture={binder}
         handleChangeQty={handleChangeQty}
         handleCheckout={handleSave}
       />
     </main>
   );
-}
 }

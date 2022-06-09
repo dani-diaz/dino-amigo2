@@ -1,6 +1,6 @@
 import sendRequest from './send-request';
 
-const BASE_URL = '/api/classes';
+const BASE_URL = '/api/lectures';
 
 
 export function getBinder() {

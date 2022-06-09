@@ -1,35 +1,35 @@
-import './ClassDetail.css';
+import './LectureDetail.css';
 import LineLesson from '../LineLesson/LineLesson';
 
 
-export default function ClassDetail({ class, handleChangeQty, handleSave }) {
-  if (!class) return null;
+export default function LectureDetail({ lecture, handleChangeQty, handleSave }) {
+  if (!lecture) return null;
 
-  const lineLessons = class.lineLessons.map(lesson =>
+  const lineLessons = lecture.lineLessons.map(lesson =>
     <LineLesson
       lineLesson={lesson}
-      isDone={class.isDone}
+      isDone={lecture.isDone}
       handleChangeQty={handleChangeQty}
       key={lesson._id}
     />
   );
 
   return (
-    <div className="ClassDetail">
+    <div className="LectureDetail">
       <div className="section-heading">
-        {class.isDone ?
-          <span>CLASS<span className="smaller">{class.classId}</span></span>
+        {lecture.isDone ?
+          <span>CLASS<span className="smaller">{lecture.lectureId}</span></span>
           :
           <span>NEW CLASS</span>
         }
-        <span>{new Date(class.updatedAt).toLocaleDateString()}</span>
+        <span>{new Date(lecture.updatedAt).toLocaleDateString()}</span>
       </div>
       <div className="line-lesson-container flex-ctr-ctr flex-col scroll-y">
         {lineLessons.length ?
           <>
             {lineLessons}
             <section className="lessons-done">
-              {class.isDone ?
+              {lecture.isDone ?
                 <span className="right">LESSONS DONE&nbsp;&nbsp;</span>
                 :
                 <button
@@ -38,8 +38,8 @@ export default function ClassDetail({ class, handleChangeQty, handleSave }) {
                   disabled={!lineLessons.length}
                 >SAVE</button>
               }
-              <span>{class.totalQty}</span>
-              <span className="right">${class.classTotal.toFixed(2)}</span>
+              <span>{lecture.totalQty}</span>
+              <span className="right">${lecture.lectureTotal.toFixed(2)}</span>
             </section>
           </>
           :

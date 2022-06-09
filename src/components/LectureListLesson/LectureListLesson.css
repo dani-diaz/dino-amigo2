@@ -1,4 +1,4 @@
-.ClassListLesson {
+.LectureListLesson {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,11 +13,11 @@
   cursor: pointer;
 }
 
-.ClassListLesson.selected, .ClassListLesson:not(.selected):hover {
+.LectureListLesson.selected, .LectureListLesson:not(.selected):hover {
   border-color: var(--green);
   border-width: 0.2vmin;
 }
 
-.ClassListLesson.selected {
+.LectureListLesson.selected {
   cursor: default;
 }

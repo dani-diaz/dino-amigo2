@@ -1,34 +1,34 @@
 .LineLesson {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 3vw 15.35vw 5.75vw 5.25vw;
-    padding: 1vmin 0;
-    color: var(--text-light);
-    background-color: var(--yellow);
-    border-top: .1vmin solid var(--green-3);
-    font-size: 1.5vw;
-  }
-  
-  .LineLesson:last-child {
-    border-bottom: .1vmin solid var(--green-3);
-  }
-  
-  .LineLesson .qty {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.3vw;
-  }
-  
-  .LineLesson .ext-quiz {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-size: 1.3vw;
-  }
-  
-  .LineLesson button {
-    margin: 0;
-  }
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3vw 15.35vw 5.75vw 5.25vw;
+  padding: 1vmin 0;
+  color: var(--text-light);
+  background-color: var(--yellow);
+  border-top: .1vmin solid var(--green-3);
+  font-size: 1.5vw;
+}
+
+.LineLesson:last-child {
+  border-bottom: .1vmin solid var(--green-3);
+}
+
+.LineLesson .qty {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3vw;
+}
+
+.LineLesson .ext-quiz {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.3vw;
+}
+
+.LineLesson button {
+  margin: 0;
+}
   
   

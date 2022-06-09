@@ -1,0 +1,40 @@
+.LibraryListLesson {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3vmin;
+  padding: 2vmin;
+  color: var(--text-light);
+  background-color: var(--yellow);
+  border: .1vmin solid var(--green-3);
+  border-radius: 1vmin;
+  font-size: 4vmin;
+}
+
+.LibraryListLesson .emoji {
+  height: 8vw;
+  width: 8vw;
+  font-size: 4vw;
+  background-color: var(--green-1);
+  border: .1vmin solid var(--green-3);
+  border-radius: 1vmin;
+}
+
+.LibraryListLesson .buy {
+  display: flex;
+  flex-direction: column;
+}
+
+.LibraryListLesson .buy span {
+  font-size: 1.7vw;
+  text-align: center;
+  color: var(--text-light);
+}
+
+.LibraryListLesson .name {
+  font-size: 2vw;
+  text-align: center;
+  color: var(--text-light);
+}
+

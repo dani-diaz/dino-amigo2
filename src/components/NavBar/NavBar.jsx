@@ -22,7 +22,7 @@ export default function NavBar({ user, setUser }) {
       &nbsp; | &nbsp;
       <Link to="/contact">Contact Us</Link>
       &nbsp; | &nbsp;
-      <Link to="/classroom">My Classroom</Link>
+      <Link to="/MyClassroom">My Classroom</Link>
       &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
       <span>Welcome, {user.name}</span>
       &nbsp; | &nbsp;
