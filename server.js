@@ -7,7 +7,6 @@ const cors = require("cors");
 const nodemailer = require("nodemailer");
 
 require('dotenv').config();
-// Connect to db after the dotenv above
 require('./config/database');
 
 const app = express();

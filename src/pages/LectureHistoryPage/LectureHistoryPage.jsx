@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import * as lecturesAPI from '../../utilities/lectures-api';
 import './LectureHistoryPage.css';
 import UserLogOut from '../../components/UserLogOut/UserLogOut';
-import LectureDetail from '../../components/LectureDetail/LectureDetail';
 import LectureList from '../../components/LectureList/LectureList';
+import LectureDetail from '../../components/LectureDetail/LectureDetail';
 
 export default function LectureHistoryPage({ user, setUser }) {
   const [lectures, setLectures] = useState([]);

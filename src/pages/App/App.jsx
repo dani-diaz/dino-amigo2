@@ -9,12 +9,14 @@ import TestimoniesPage from '../TestimoniesPage/TestimoniesPage';
 import MyClassroomPage from '../MyClassroomPage/MyClassroomPage';
 import NavBar from '../../components/NavBar/NavBar';
 import ContactForm from '../../components/ContactForm/ContactForm';
+import QuizForm from '../../components/QuizForm/QuizForm';
 import TeachersListPage from '../TeachersListPage/TeachersListPage';
 import TeacherBioPage from '../TeacherBioPage/TeacherBioPage';
 import LectureHistoryPage from '../LectureHistoryPage/LectureHistoryPage';
 import NewLecturePage from '../NewLecturePage/NewLecturePage';
 import './App.css';
 import { teachers } from "../../teacherData.js";
+import { questions } from "../../../seed.js";
 
 function App() {
   const [user, setUser] = useState(getUser());
@@ -32,9 +34,10 @@ function App() {
             <Route path="/testimonies" element={<TestimoniesPage />} />
             <Route path="/MyClassroom" element={<MyClassroomPage />} />
             <Route path="/ContactForm" element={<ContactForm />} />   
+            <Route path="/lesson/:quiz" element={<QuizForm questions={questions} />} /> 
             <Route path="/OurTeachers" element={<TeachersListPage teachers={teachers} />} /> 
             <Route path="/ImTeacher/:teacherName" element={<TeacherBioPage teachers={teachers} />} />
-            <Route path="/classes/new" element={<NewLecturePage user={user} setUser={setUser} />} />
+            <Route path="/classes/new" element={<NewLecturePage user={user} setUser={setUser} questions={questions}/>} />
             <Route path="/classes" element={<LectureHistoryPage user={user} setUser={setUser} />} />
           </Routes>
         </>

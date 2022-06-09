@@ -3,13 +3,12 @@ require('./config/database');
 
 const Level = require('./models/level');
 const Lesson = require('./models/lesson');
-const Quiz = require('./models/quiz');
 
 // Pattern:  IIFE
 (async function() {
 
   await Level.deleteMany({});
-  const levels = await level.create([
+  const levels = await Level.create([
     {name: '📕 Level 1', sortOrder: 10},
     {name: '📗 Level 2', sortOrder: 20},
     {name: '📘 Level 3', sortOrder: 30},
@@ -23,8 +22,18 @@ const Quiz = require('./models/quiz');
   const lessons = await Lesson.create([
 	  {name: 'Los Colores', 
 	  emoji: '🖍', 
-	  level: levels[0], 
-	  questions: [
+	  level: levels[0]
+  } 
+	]);
+	
+
+	console.log(lessons)
+	
+	process.exit();
+	
+})();
+
+export const questions = [
 	  {
 		  questionText: 'How do you say Hello in Spanish?',
 			answerOptions: [
@@ -61,13 +70,4 @@ const Quiz = require('./models/quiz');
 				{ answerText: 'Perro', isCorrect: true },
 			],
 		},
-	 ]
-	}
-	]);
-
-
-	console.log(lessons)
-
-	process.exit();
-
-})();
+	 ];
