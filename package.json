@@ -17,10 +17,12 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.3.4",
     "morgan": "^1.10.0",
+    "node-fetch": "^2.6.7",
     "nodemailer": "^6.7.5",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-icons": "^4.4.0",
+    "react-native-seed": "^0.0.33",
     "react-router-dom": "^6.3.0",
     "react-scripts": "^5.0.1",
     "seed": "^0.4.4",
@@ -51,5 +53,14 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:3001"
+  "proxy": "http://localhost:3001",
+  "main": "index.js",
+  "repository": "https://github.com/dani-diaz/dino-amigo2.git",
+  "author": "dani-diaz <daniela.diaz0808@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^8.2.5",
+    "babel-preset-react": "^6.24.1"
+  }
 }

@@ -1,10 +1,9 @@
 require('dotenv').config();
-require('./config/database');
+require('../config/database');
 
-const Level = require('./models/level');
-const Lesson = require('./models/lesson');
+const Level = require('../models/level');
+const Lesson = require('../models/lesson');
 
-// Pattern:  IIFE
 (async function() {
 
   await Level.deleteMany({});
@@ -33,7 +32,7 @@ const Lesson = require('./models/lesson');
 	
 })();
 
-export const questions = [
+const questions = [
 	  {
 		  questionText: 'How do you say Hello in Spanish?',
 			answerOptions: [

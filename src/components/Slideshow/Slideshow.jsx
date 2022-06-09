@@ -36,7 +36,7 @@ return (
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
         {images.map((backgroundImage, index) => (
           <img className="slide1" key={index} style={{
-            background: `url(${images.backgroundImage}) no-repeat center center` }} />
+            background: `url(${images.backgroundImage}) no-repeat center center` }} alt=''/>
         ))}
       </div>
       <div className="Dots">

@@ -28,7 +28,7 @@ const ContactForm = () => {
    <>
       <div className="container">
         <div className="aforms" >
-          <img className="dinopic" src="https://i.imgur.com/r0HyzSU.png" />
+          <img className="dinopic" src="https://i.imgur.com/r0HyzSU.png" alt='' />
           <form className="form1">
             <div className="contact-info">
               <h1 className="title2">Let's get in touch</h1>
@@ -67,7 +67,7 @@ const ContactForm = () => {
               <button className="button1" type="submit">{status}</button>
             </div>
           </form>
-          <img className="dinopic2" src="https://i.imgur.com/NPkdijE.png" />
+          <img className="dinopic2" src="https://i.imgur.com/NPkdijE.png" alt='' />
         </div>
       </div>
     </>
