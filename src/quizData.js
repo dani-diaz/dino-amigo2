@@ -1,41 +1,7 @@
-require('dotenv').config();
-require('./config/database');
-
-const Level = require('./models/level');
-const Lesson = require('./models/lesson');
-
-
-(async function() {
-
-  await Level.deleteMany({});
-  const levels = await Level.create([
-    {name: '📕 Level 1', sortOrder: 10},
-    {name: '📗 Level 2', sortOrder: 20},
-    {name: '📘 Level 3', sortOrder: 30},
-    {name: '📙 Level 4', sortOrder: 40},
-    {name: '🎼 Songs', sortOrder: 50},
-    {name: '📝 Printouts', sortOrder: 60},
-    {name: 'Level 7', sortOrder: 70},
-  ]);
-
-  await Lesson.deleteMany({});
-  const lessons = await Lesson.create([
-	  {name: 'Los Colores', 
-	  emoji: '🖍', 
-	  level: levels[0]
-  } 
-	]);
-	
-
-	console.log(lessons)
-	
-	process.exit();
-	
-})();
-
-
-export const questions = [
-    {
+export const questions = (
+    [ 
+      {
+        quizTitle: 'Los Colores',
         questionText: 'How do you say Hello in Spanish?',
           answerOptions: [
               { answerText: 'Ola', isCorrect: false },
@@ -45,6 +11,7 @@ export const questions = [
           ],
       },
       {
+        quizTitle: 'Los Colores',
           questionText: 'How do you say "Red" in Spanish?',
           answerOptions: [
               { answerText: 'Azul', isCorrect: false },
@@ -54,6 +21,7 @@ export const questions = [
           ],
       },
       {
+        quizTitle: 'Los Colores',
           questionText: 'How do you say "5" in Spanish?',
           answerOptions: [
               { answerText: 'Cinco', isCorrect: true },
@@ -63,6 +31,7 @@ export const questions = [
           ],
       },
       {
+        quizTitle: 'Los Colores',
           questionText: 'How do you say "Dog" in Spanish?',
           answerOptions: [
               { answerText: 'Oso', isCorrect: false },
@@ -71,4 +40,8 @@ export const questions = [
               { answerText: 'Perro', isCorrect: true },
           ],
       },
-   ];
+
+   ]
+   
+   
+   );

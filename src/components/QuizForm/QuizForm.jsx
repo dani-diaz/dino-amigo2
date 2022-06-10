@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import "./QuizForm.css";
 
 
+
 export default function QuizForm({questions}) {
 	
 	const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -43,7 +44,6 @@ export default function QuizForm({questions}) {
 				</>
 			)}
 		</div>
-		{/* <button className='Submit-quiz' type='Submit' onClick={nextLesson}></button> */}
 		</body>
 	);
 }

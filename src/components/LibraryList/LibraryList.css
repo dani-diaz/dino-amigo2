@@ -1,9 +1,0 @@
-.LibraryList {
-    background-color: var(--green-1);
-    border: .1vmin solid var(--green-3);
-    border-radius: 2vmin;
-    margin: 3vmin 0;
-    padding: 3vmin;
-    overflow-y: scroll;
-  }
-  
