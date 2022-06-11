@@ -1,6 +1,5 @@
-// import ImageSlider from '../../components/Slider/ImageSlider';
-// import { SliderData } from '../../components/Slider/SliderData';
-import Slideshow from '../../components/Slideshow/Slideshow';
+import ImageSlider from '../../components/Slider/ImageSlider';
+import { SliderData } from '../../components/Slider/SliderData';
 
 export default function HomePage() {
   return (
@@ -16,7 +15,7 @@ export default function HomePage() {
       </h3>
     <br />
     <br />
-    <Slideshow />
+    <ImageSlider slides={SliderData}/>
 
     </>
   );

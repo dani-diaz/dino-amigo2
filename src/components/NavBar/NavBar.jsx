@@ -18,7 +18,7 @@ export default function NavBar({ user, setUser }) {
       &nbsp; | &nbsp;
       <Link to="/classes">Classes</Link>
       &nbsp; | &nbsp;
-      <Link to="/testimonies">Testimonies</Link>
+      <Link to="/flashcards">Flashcards</Link>
       &nbsp; | &nbsp;
       <Link to="/contact">Contact Us</Link>
       &nbsp; | &nbsp;
