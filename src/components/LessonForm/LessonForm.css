@@ -14,7 +14,7 @@
 
 
 .LessonForm .lesson-title {
-  font-size: 4vw;
+  font-size: 9vmin;
   text-align: center;
   color: var(--text-light);
 }

@@ -8,17 +8,17 @@
       justify-content: center; 
   } 
   .image {
-    width: 1000px;
+    width: 800px;
     height: 600px;
     border-radius: 10px;
   }
   
 button.left-arrow img {
-  height: 30px;
+  height: 100px;
 }
 
 button.right-arrow img {
-  height: 30px;
+  height: 100px;
 }
   /* .right-arrow img{
     /* font-size: 3rem; */

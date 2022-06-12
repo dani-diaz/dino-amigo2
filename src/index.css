@@ -15,9 +15,7 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+  font-family: 'Gochi Hand', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--green-4);
@@ -25,68 +23,11 @@ body {
   height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-#root {
-  height: 100%;
-}
-
-.align-ctr {
-  text-align: center;
-}
-
-.align-rt {
-  text-align: right;
-}
-
-.smaller {
-  font-size: smaller;
-}
-
-.flex-ctr-ctr {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
-.flex-j-end {
-  justify-content: flex-end;
-}
-
-.scroll-y {
-  overflow-y: scroll;
-}
-
-.section-heading {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: var(--green-1);
-  color: var(--text-dark);
-  border: .1vmin solid var(--green-3);
-  border-radius: 1vmin;
-  padding: .6vmin;
-  text-align: center;
-  font-size: 2vmin;
-}
-
 .form-container {
   padding: 3vmin;
   background-color: var(--green-1);
   border: .1vmin solid var(--green-3);
   border-radius: 1vmin;
-}
-
-p.error-message {
-  color: var(--green);
-  text-align: center;
 }
 
 form {
@@ -150,18 +91,24 @@ button[type="submit"] {
   grid-column: span 2;
   margin: 1vmin 0 0;
 }
-
+h1 {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 6vmin;
+  font-weight: lighter;
+  text-decoration: none;
+}
 nav a {
   text-decoration: none;
+  font-size: 2vmin;
 }
 
 button.left-arrow img {
-  height: 30px;
+  height: 80px;
 
 }
 
 button.right-arrow img {
-  height: 30px;
+  height: 80px;
 }
 
 button.left-arrow {
@@ -195,17 +142,16 @@ max-height: 600px;
 background-position: center; 
 background-size: cover; 
 margin-left: 500px;
-margin-top: px;
 }
 
 .form-container-signup {
 background-image: url(https://i.imgur.com/69L2r3N.png);
 aspect-ratio: 25/18;
-max-height: 600px;
+max-height: 680px;
 background-position: center; 
 background-size: cover; 
 margin-left: 500px;
-margin-top: px;
+margin-top: -80px;
 }
 
 .inside-form-login{
@@ -214,7 +160,7 @@ padding: 210px 210px 150px;
   }
 
   .inside-form-signup{
-    max-width: 500px ;
+    max-width: 600px ;
     padding: 210px 210px 150px;
       }
 
@@ -229,9 +175,20 @@ padding: 210px 210px 150px;
     margin-left: 300px;
     background-color: coral;
     border: 1px solid rgb(215, 16, 16);
-
   }
-
+  button.auth-button:hover {
+    background-color: rgb(233, 68, 18);
+    }
   .container-auth{
     margin-top: -250px;
   }
+
+  h1.home-page-title {
+    font-size: 6vmin;
+    font-weight: lighter;
+}
+
+h3, h2  {
+  color: #c90ebc;
+  font-size: 25px;
+}

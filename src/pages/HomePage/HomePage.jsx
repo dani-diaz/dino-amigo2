@@ -6,13 +6,7 @@ export default function HomePage() {
     <>
     <br />
     <br />
-    <h1>Welcome to Dino Amigo!</h1>
-    <br />
-      <h3> Why cartoons and music?    
-          Kids love cartoons and music so why not mix them to create a powerful learning tool?    
-          Beyond the fun, there is also a strong educational basis:     
-          Research has shown that music is one of the best ways to learn a foreign language.    
-      </h3>
+    <h1 className="about-title">Welcome to the magical world of Dino Amigo!</h1>
     <br />
     <br />
     <ImageSlider slides={SliderData}/>

@@ -1,7 +1,9 @@
 .container-lesson {
-  margin-top: 150px;
+  margin-top: 60px;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+  /* display: inline-flex; */
+  justify-content: space-around;
 }
 
 
@@ -17,3 +19,27 @@
 .title-1 {
   padding: -150px;
 }
+
+body.lessonsPage {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem;
+  background-color: #cff128;
+  margin-top: 50px;
+  }
+
+  .lesson-parag {
+    color: #c90ebc;
+    align-items: right;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 1800px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 50px; 
+  }
