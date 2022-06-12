@@ -187,3 +187,51 @@ background-color: transparent;
   display: flex;
   justify-content: center; 
 } 
+
+.form-container-login {
+background-image: url(https://i.imgur.com/69L2r3N.png);
+aspect-ratio: 25/18;
+max-height: 600px;
+background-position: center; 
+background-size: cover; 
+margin-left: 500px;
+margin-top: px;
+}
+
+.form-container-signup {
+background-image: url(https://i.imgur.com/69L2r3N.png);
+aspect-ratio: 25/18;
+max-height: 600px;
+background-position: center; 
+background-size: cover; 
+margin-left: 500px;
+margin-top: px;
+}
+
+.inside-form-login{
+max-width: 500px ;
+padding: 210px 210px 150px;
+  }
+
+  .inside-form-signup{
+    max-width: 500px ;
+    padding: 210px 210px 150px;
+      }
+
+  .dinologo {
+    margin-top: 150px;
+    margin-left: -1180px;
+    max-height: 200px;
+  }
+  
+  .auth-button {
+    margin-top: 150px;
+    margin-left: 300px;
+    background-color: coral;
+    border: 1px solid rgb(215, 16, 16);
+
+  }
+
+  .container-auth{
+    margin-top: -250px;
+  }
