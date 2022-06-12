@@ -21,19 +21,10 @@ export const lessons = [
   lessonImage: "https://i.imgur.com/ptC4St1.png"
   },
 
-  {title: 'Los Colores', 
+  {title: 'La Familia', 
   video: "https://www.youtube.com/embed/8yuiUvi568I?start=170&end=200",
   lessonImage: "https://i.imgur.com/ptC4St1.png"	  
   }, 
 
-  {title: 'Los Colores',  
-  video: "https://www.youtube.com/embed/8yuiUvi568I?start=170&end=200",
-  lessonImage: "https://i.imgur.com/ptC4St1.png"	  
-  }, 
-
-  {title: 'Los Colores', 
-  video: "https://www.youtube.com/embed/8yuiUvi568I?start=170&end=200",
-  lessonImage: "https://i.imgur.com/ptC4St1.png"	  
-  }, 
 ];
 	

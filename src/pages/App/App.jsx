@@ -14,10 +14,12 @@ import LessonPage from '../LessonPage/LessonPage';
 import ClassesPage from '../ClassesPage/ClassesPage';
 import TeachersListPage from '../TeachersListPage/TeachersListPage';
 import TeacherBioPage from '../TeacherBioPage/TeacherBioPage';
+import FlashCardPage from '../FlashCardPage/FlashCardPage';
 import './App.css';
 import { teachers } from "../../teacherData.js";
 import { quizzes } from "../../quizData.js";
 import { lessons } from "../../lessonData.js";
+import { initialDecks } from "../../initialDecks.js";
 
 
 function App() {
@@ -35,6 +37,7 @@ function App() {
             <Route path="/contact" element={<ContactUsPage />} />
             <Route path="/ContactForm" element={<ContactForm />} />   
             <Route path="/classes" element={<ClassesPage />} />   
+            <Route path="/flashcards" element={<FlashCardPage initialDecks={initialDecks} />} /> 
             <Route path="/quiz" element={<QuizForm quizzes={quizzes}/>} />  
             <Route path="/lessons" element={<LessonsPage lessons={lessons} />} /> 
             <Route path="/MyLesson/:lessonName" element={<LessonPage lessons={lessons} />} /> 

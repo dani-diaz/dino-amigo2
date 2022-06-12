@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+.home-page {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.home-page-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.selected-deck-title {
+  font-size: 24px;
+}
+
+.sidebar-block {
+  width: 400px;
+}
+
+.quiz-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.change-question-button {
+  cursor: pointer;
+  width: 4em;
+  height: 4em;
+  color: rgb(249, 249, 249);
+}
+
+
