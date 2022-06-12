@@ -21,6 +21,7 @@ const ImageSlider = ({ slides }) => {
   return (
     <>
       <div className='sliderbox'>
+            <button className='left-arrow' onClick={prevSlide}><img className='left-arrow' src="https://i.imgur.com/rti6MJ8.png" /></button>
           <section className='slider'>
             {SliderData.map((slide, index) => {
               return (
@@ -35,8 +36,7 @@ const ImageSlider = ({ slides }) => {
               );
             })}
           </section>
-        <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
-        <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
+        <button className='right-arrow' onClick={nextSlide}><img src="https://i.imgur.com/w7coA5l.png" /></button>
       </div>
     </>
   );

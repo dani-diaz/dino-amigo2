@@ -1,5 +1,4 @@
 import QuizCard from "../../components/Flashcard/QuizCard";
-import { BsCaretLeftFill, BsFillCaretRightFill } from "react-icons/bs";
 import "./FlashCardHomePage.css";
 
 export default function FlashCardHomePage({
@@ -31,11 +30,12 @@ export default function FlashCardHomePage({
   };
 
   return (
+    <body className="FCHP">
     <div className="home-page">
       <div className="sidebar-block"></div>
       {quizMode === false ? (
         <div>
-          <h1 className="home-page-title">Flashcards Home Page</h1>
+          <h1 className="home-page-title">Your flashcards will play here 👇🏼</h1>
           <p>Select a deck to get started!</p>
         </div>
       ) : (
@@ -49,20 +49,21 @@ export default function FlashCardHomePage({
             <button
               className="change-question-button"
               onClick={decrementQuestionNumber}
-            >⇦</button>
+              >⇦</button>
             <QuizCard
               selectedDeck={selectedDeck}
               questionNumber={questionNumber}
               cardSide={cardSide}
               setCardSide={setCardSide}
-            />
+              />
             <button
               className="change-question-button"
               onClick={incrementQuestionNumber}
-            >⇨</button>
+              >⇨</button>
           </div>
         </div>
       )}
     </div>
+      </body>
   );
 }

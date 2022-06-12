@@ -14,7 +14,7 @@
 .about-container1 {
   width: 100%;
   max-width: 1000px;
-  height: 400px;
+  height: 450px;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
@@ -24,7 +24,7 @@
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 50px;
-  padding-bottom: 50px; 
+  padding-bottom: 0px; 
   }
 
   .dinopic1 {

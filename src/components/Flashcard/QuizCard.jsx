@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { GiRapidshareArrow } from "react-icons/gi";
 import "../Flashcard/Card.css";
 
 export default function QuizCard({
@@ -27,11 +26,11 @@ export default function QuizCard({
   return (
     <div className="quiz-card">
       <div className="quiz-card-top">
-        <GiRapidshareArrow className="flip-card-button" onClick={flipCard} />
+        <button className="flip-card-button" onClick={flipCard} >➰</button>
       </div>
       <div className="quiz-card-content">
         {selectedDeck.content.length === 0 ? (
-          <p>Add questions to this deck to study</p>
+          <p>This deck is empty</p>
         ) : (
           <div>
             {cardSide === "front" ? (

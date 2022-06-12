@@ -150,3 +150,40 @@ button[type="submit"] {
   grid-column: span 2;
   margin: 1vmin 0 0;
 }
+
+nav a {
+  text-decoration: none;
+}
+
+button.left-arrow img {
+  height: 30px;
+
+}
+
+button.right-arrow img {
+  height: 30px;
+}
+
+button.left-arrow {
+    background-color: transparent;
+    border-style: none;
+}
+
+button.right-arrow {
+  background-color: transparent;
+  border-style: none;
+}
+
+button.left-arrow:hover {
+  background-color: transparent;
+  
+}
+
+button.right-arrow:hover {
+background-color: transparent;
+}
+
+.sliderbox {
+  display: flex;
+  justify-content: center; 
+} 

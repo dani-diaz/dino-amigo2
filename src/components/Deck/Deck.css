@@ -1,10 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
-
 .deck {
-  background: rgb(147, 9, 166);
+  background: rgb(149, 13, 213);
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 22px;
   width: 300px;
   height: 200px;
   margin-left: 80px;
@@ -14,6 +12,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .deck-title {
@@ -24,7 +23,7 @@
   font-size: 16px;
   cursor: pointer;
   font-weight: bold;
-  color: #3751ad;
+  color: #f4ec05;
   width: 30%;
 }
 
@@ -53,4 +52,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+ 
 }

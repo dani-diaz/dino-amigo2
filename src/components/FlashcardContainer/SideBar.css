@@ -11,7 +11,7 @@
   background-color: #e819c2;
   color: #000000;
   overflow-y: scroll;
-  margin-top: 100px;
+  margin-top: 150px;
   margin-left: 50px;
 }
 
@@ -24,9 +24,8 @@
   align-items: center;
   width: 100px;
   height: 100%;
-  background-color: #0839ea;
   color: #ffffff;
-  margin-top: 100px;
+  margin-top: 160px;
   margin-left: 0px;
 }
 
@@ -38,14 +37,6 @@
   width: 100%;
 }
 
-.sidebar-icon {
-  width: 2em;
-  height: 2em;
-  margin-right: 8px;
-  cursor: pointer;
-  user-select: none;
-  margin: 1em;
-}
 
 .sidebar-header {
   display: flex;
@@ -59,6 +50,8 @@
   height: 2em;
   cursor: pointer;
   margin-right: 8px;
+  display: flex;
+  align-items: center;
 }
 
 .deck-button {

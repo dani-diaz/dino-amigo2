@@ -4,6 +4,7 @@ import SideBar from "../../components/FlashcardContainer/SideBar.jsx";
 import { initialDecks } from "../../initialDecks.js";
 
 
+
 export default function FlashCardPage() {
   const [userDecks, setUserDecks] = useState([]);
   const [selectedDeck, setSelectedDeck] = useState({});
@@ -104,8 +105,10 @@ export default function FlashCardPage() {
   };
 
   return (
-    <>
-    <h1>this is the flashcard page</h1>
+    <body className="flashcardpagebody">
+    <br />
+    <h1>You can use this page to create flashcards to study what you've learned! </h1>
+    <br />
     <div className="FlashCard">
       <SideBar
         userDecks={userDecks}
@@ -139,6 +142,6 @@ export default function FlashCardPage() {
         deleteCard={deleteCard}
         />
     </div>
-        </>
+        </body>
   );
 }

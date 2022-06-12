@@ -5,7 +5,6 @@ import AuthPage from '../AuthPage/AuthPage';
 import HomePage from '../HomePage/HomePage';
 import AboutUsPage from '../AboutUsPage/AboutUsPage';
 import ContactUsPage from '../ContactUsPage/ContactUsPage';
-import MyClassroomPage from '../MyClassroomPage/MyClassroomPage';
 import NavBar from '../../components/NavBar/NavBar';
 import ContactForm from '../../components/ContactForm/ContactForm';
 import QuizForm from '../../components/QuizForm/QuizForm';
@@ -43,7 +42,6 @@ function App() {
             <Route path="/MyLesson/:lessonName" element={<LessonPage lessons={lessons} />} /> 
             <Route path="/OurTeachers" element={<TeachersListPage teachers={teachers} />} /> 
             <Route path="/ImTeacher/:teacherName" element={<TeacherBioPage teachers={teachers} />} />
-            <Route path="/MyClassroom" element={<MyClassroomPage />} />
           </Routes>
         </>
         :
