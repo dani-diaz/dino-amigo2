@@ -9,7 +9,7 @@ export default function QuizCard({
   card,
 }) {
   const [cardContent, setCardContent] = useState(
-    // selectedDeck.content[questionNumber]
+    selectedDeck.content[questionNumber]
   );
 
   useEffect(() => {
