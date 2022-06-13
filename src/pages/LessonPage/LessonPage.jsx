@@ -14,31 +14,28 @@ export default function LessonPage({ lessons }) {
 
 
   return (
-    <> 
-
-    <h1 key={lesson.number}>{lesson.number}</h1>
-    <div className="lesson-card">
-      <h1 className="lesson-name1" key={lesson.title}>{lesson.title}</h1>
-      <iframe 
-      src={`${lesson.video}`} 
-      width="640" 
-      height="315" 
-      title="YouTube video player" 
-      frameBorder="90" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen 
-      key={lesson.video} >  
-      </iframe>
-      <h1>Quiz</h1>
-      <div>{filteredQuizzes.map((quiz) => (
-        <p key={quiz.quizTitle}>
-            <Link to={`/quiz`} state={quiz} key={quiz.quizTitle} className="quiz-link">{quiz.quizTitle}</Link> 
+    <body className="lesson-pard">
+      <div>
+        <h1 className="lesson-name1" key={lesson.title}>{lesson.number} 👉🏼 {lesson.title}</h1>
+      </div>
+      <div>
+        <iframe 
+        src={`${lesson.video}`} 
+        width="640" 
+        height="315" 
+        title="YouTube video player" 
+        frameBorder="90" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen 
+        key={lesson.video} >  
+        </iframe>
+      </div>
+       <div className="trans-quizname">{filteredQuizzes.map((quiz) => (
+         <p key={quiz.quizTitle}>
+            <Link to={`/quiz`} state={quiz} key={quiz.quizTitle} className="quiz-linkname">{quiz.quizTitle}</Link>
         </p>
       ))}</div>
         
-    </div>
-
-   
-  </>
+    </body>
   );
 };

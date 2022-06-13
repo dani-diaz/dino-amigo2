@@ -1,32 +1,63 @@
-.lesson-card {
-    display: block;
+.container-lesson {
+  margin-top: 60px;
+  display: flex;
+  /* align-items: center; */
+  /* display: inline-flex; */
+  justify-content: space-around;
+}
+
+
+.lesson-card1 {
+  width: 550px;
+  height: 40px;
+  min-width: 200px;
+  min-height: 200px;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.title-1 {
+  padding: -150px;
+}
+
+body.lessonsPage {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem;
+  background-color: #cff128;
+  margin-top: 50px;
   }
-  
-  
-  .lesson-name {
-  color: rgb(255, 255, 255);
-  display: block;
-  font-size: 5em;
-  font-weight: bold;
-  text-decoration: none;
+
+  .lesson-parag {
+    color: #c90ebc;
+    align-items: right;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 1800px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 50px; 
   }
-  
-  .lesson-bio {
-  color: black;
-  display: block;
-  font-size: 2em;
-  font-weight: bold;
-  background-color: rgb(255, 255, 255);
-  border-radius: 10px;
-  padding: 20px 20px 20px 20px;
+
+  .trans-quizname {
+    background-image: url(https://i.imgur.com/sj6cYnR.png);
+    background-size: cover;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    min-height: 138px;
+    max-width: 350px;
+    /* margin: 10px 10px 10px 10px; */
+    margin-top: 50px;
+    margin-left: 740px
   }
-  
-  .lesson-img {
-  margin-top: 100px;
-  width: 300px;
-  height: 300px;
-  min-width: 250px;
-  min-height: 250px;
-  max-width: 450px;
-  max-height: 450px;
+
+  .quiz-linkname {
+    font-size: 80px;
+    color: transparent;
   }
