@@ -1,11 +1,10 @@
 .sidebar {
-  position: fixed;
   top: 0;
   bottom: 0;
   display: flex;
   flex-direction: column;
   width: 400px;
-  height: 100%;
+  height: auto;
   background-color: #e819c2;
   color: #000000;
   overflow-y: scroll;
@@ -14,7 +13,6 @@
 }
 
 .sidebar-icon-bar {
-  position: fixed;
   top: 0;
   bottom: 0;
   display: flex;
@@ -23,7 +21,7 @@
   width: 100px;
   height: 100%;
   color: #ffffff;
-  margin-top: 240px;
+  margin-top: 200px;
   margin-left: 0px;
 }
 

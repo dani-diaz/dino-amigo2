@@ -6,7 +6,7 @@ export default function EditCard({
   currentCard,
   setEditCard,
   updateCard,
-  cardNumber,
+  selectedDeck,
 }) {
   const [cardFront, setCardFront] = useState(currentCard.front);
   const [cardBack, setCardBack] = useState(currentCard.back);
@@ -50,7 +50,7 @@ export default function EditCard({
         <button
           onClick={() => {
             setEditCard(false);
-            updateCard(cardNumber, cardFront, cardBack);
+            updateCard(selectedDeck, cardFront, cardBack);
           }}
         >
           Save

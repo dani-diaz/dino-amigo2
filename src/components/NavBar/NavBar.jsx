@@ -16,7 +16,7 @@ export default function NavBar({ user, setUser }) {
       &nbsp; | &nbsp;
       <Link to="/lessons">Lessons</Link>
       &nbsp; | &nbsp;
-      <Link to="/flashcards">Flashcards</Link>
+      <Link to="/deck">Flashcards</Link>
       &nbsp; | &nbsp;
       <Link to="/contact">Contact Us</Link>
       &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;

@@ -8,6 +8,7 @@ export default function FlashCardHomePage({
   setQuestionNumber,
   cardSide,
   setCardSide,
+  userDecks,
 }) {
 
   const incrementQuestionNumber = () => {
@@ -22,7 +23,7 @@ export default function FlashCardHomePage({
 
   const decrementQuestionNumber = () => {
     if (questionNumber === 0) {
-      setQuestionNumber(selectedDeck.content.length - 1);
+      setQuestionNumber(selectedDeck.deck.length - 1);
     } else {
       setQuestionNumber(questionNumber - 1);
     }
@@ -41,11 +42,11 @@ export default function FlashCardHomePage({
       ) : (
         <div>
           <h1 className="home-page-title">Practice Time!</h1>
-          <h2 className="selected-deck-title">{selectedDeck.data.name}</h2>
+          <h2 className="selected-deck-title">{selectedDeck.name}</h2>
           <h3 className="card-number">{`${questionNumber + 1}/${
-            selectedDeck.content.length
+            selectedDeck.length
           }`}</h3>
-          <div className="quiz-section">
+          { selectedDeck.flashcards.map( f => <div className="quiz-section">
             <button
               className="change-question-button"
               onClick={decrementQuestionNumber}
@@ -55,12 +56,13 @@ export default function FlashCardHomePage({
               questionNumber={questionNumber}
               cardSide={cardSide}
               setCardSide={setCardSide}
+              card={f}
               />
             <button
               className="change-question-button"
               onClick={incrementQuestionNumber}
               >⇨</button>
-          </div>
+          </div>)}
         </div>
       )}
     </div>

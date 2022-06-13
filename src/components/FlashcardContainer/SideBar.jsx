@@ -21,7 +21,9 @@ export default function SideBar({
   setCardSide,
   deleteCard,
   updateCard,
+  allCards,
 }) {
+  console.log(selectedDeck);
   return (
     <div>
       {addQuestionsView === false ? (
@@ -57,9 +59,9 @@ export default function SideBar({
               setQuizMode={setQuizMode}
               setAddQuestionsView={setAddQuestionsView}
             />
-            <h1 className="sidebar-title">{selectedDeck.data.name}</h1>
+            <h1 className="sidebar-title">{selectedDeck.name}</h1>
             <div className="deck-data">
-              <p className="deck-length">{selectedDeck.content.length} cards</p>
+              {/* <p className="deck-length">{selectedDeck.content.length} cards</p> */}
               {quizMode === false ? (
                 <button
                   className="deck-button"
@@ -75,15 +77,27 @@ export default function SideBar({
             </div>
           </div>
           <div className="separator"></div>
-          {selectedDeck
-            ? selectedDeck.content.map((currentCard, i) => (
+          {allCards
+            ? allCards.map((currentCard, i) => (
                 <Card
                   key={i}
                   currentCard={currentCard}
-                  cardNumber={i}
                   deleteCard={deleteCard}
                   updateCard={updateCard}
                   setCardSide={setCardSide}
+                  selectedDeck={selectedDeck}
+                />
+              ))
+            : null}
+          {selectedDeck.flashcards.length
+            ? selectedDeck.flashcards.map((currentCard, i) => (
+                <Card
+                  key={i}
+                  currentCard={currentCard}
+                  deleteCard={deleteCard}
+                  updateCard={updateCard}
+                  setCardSide={setCardSide}
+                  selectedDeck={selectedDeck}
                 />
               ))
             : null}

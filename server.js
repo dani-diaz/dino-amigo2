@@ -20,6 +20,8 @@ app.use(express.static(path.join(__dirname, 'build')));
 app.use(require('./config/checkToken'));
 
 app.use('/api/users', require('./routes/api/users'));
+app.use('/api/decks', require('./routes/api/decks'));
+app.use('/api/flashcards', require('./routes/api/flashcards'));
 
 // const ensureLoggedIn = require('./config/ensureLoggedIn');
 // app.use('/api/lessons', ensureLoggedIn, require('./routes/api/lessons'));

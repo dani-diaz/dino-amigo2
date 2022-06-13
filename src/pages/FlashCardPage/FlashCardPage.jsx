@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import FlashCardHomePage from "../FlashCardHomePage/FlashCardHomePage.jsx";
 import SideBar from "../../components/FlashcardContainer/SideBar.jsx";
-import { initialDecks } from "../../initialDecks.js";
+// import { initialDecks } from "../../initialDecks.js";
+import * as decksAPI from "../../utilities/decks-api";
 
 
 
@@ -12,15 +13,15 @@ export default function FlashCardPage() {
   const [quizMode, setQuizMode] = useState(false);
   const [questionNumber, setQuestionNumber] = useState(0);
   const [cardSide, setCardSide] = useState("front");
+  const [allCards, setAllCards] = useState([]);
 
  
   useEffect(() => {
-    const data = localStorage.getItem("deck-list");
-    if (data) {
-      setUserDecks(JSON.parse(data));
-    } else {
-      setUserDecks(initialDecks);
+    async function getDecks() {
+      const decks= await decksAPI.getAll();
+    setUserDecks(decks);
     }
+  getDecks();
   }, []);
 
   useEffect(() => {
@@ -30,33 +31,30 @@ export default function FlashCardPage() {
 
   const createNewDeck = () => {
     const newDeck = {
-      id: userDecks.length,
-      data: { name: "Click title area to name your new deck" },
-      content: [],
+      deckName: "Click title area to name your new deck",
     };
     setUserDecks([...userDecks, newDeck]);
   };
 
   const addCard = () => {
     const newCard = { front: "Front Side", back: "Back Side" };
-    const newCardList = [...selectedDeck.content, newCard];
-    const index = selectedDeck.id;
+   setAllCards([...allCards, newCard]);
 
-    const updatedDeckData = {
-      id: index,
-      data: selectedDeck.data,
-      content: newCardList,
-    };
+    // const updatedDeckData = {
+    //   id: index,
+    //   data: selectedDeck.data,
+    //   content: newCardList,
+    // };
 
-    setSelectedDeck(updatedDeckData);
+    // setSelectedDeck(updatedDeckData);
 
-    const newDecks = [...userDecks];
+    // const newDecks = [...userDecks];
 
-    newDecks
-      .filter((deck) => deck.id !== selectedDeck.id)
-      .splice(index, 1, updatedDeckData);
+    // newDecks
+    //   .filter((deck) => deck.id !== selectedDeck.id)
+    //   .splice(index, 1, updatedDeckData);
 
-    setUserDecks(newDecks);
+    // setUserDecks(newDecks);
   };
 
   const deleteCard = (currentCard) => {
@@ -78,30 +76,35 @@ export default function FlashCardPage() {
     setUserDecks(newDecks);
   };
 
-  const updateCard = (index, front, back) => {
+  const updateCard = async (deck, front, back) => {
+    console.log(deck);
     const newCardData = { front: front, back: back };
+    const flashcard = await decksAPI.addFlashcard(newCardData, deck._id);
+    const updatedDecks = userDecks.filter(d => d._id === deck._id ? d.flashcards.push(flashcard) : d.flashcards );
+    setUserDecks(updatedDecks);
+    setAllCards([]);
 
-    const cardList = [...selectedDeck.content];
-    cardList.splice(index, 1, newCardData);
+    // const cardList = [...selectedDeck.content];
+    // cardList.splice(index, 1, newCardData);
 
-    const newSelectedDeckData = {
-      id: selectedDeck.id,
-      data: selectedDeck.data,
-      content: cardList,
-    };
-    setSelectedDeck(newSelectedDeckData);
+    // const newSelectedDeckData = {
+    //   id: selectedDeck.id,
+    //   data: selectedDeck.data,
+    //   content: cardList,
+    // };
+    // setSelectedDeck(newSelectedDeckData);
 
-    const newDecks = [userDecks];
+    // const newDecks = [userDecks];
 
-    newDecks.splice(selectedDeck.id, 1, newSelectedDeckData);
+    // newDecks.splice(selectedDeck.id, 1, newSelectedDeckData);
 
-    setUserDecks(newDecks);
+    // setUserDecks(newDecks);
   };
 
-  const removeDeck = (deck) => {
-    const updatedDeckList = [userDecks];
-    updatedDeckList.splice(deck.id, 1);
-    setUserDecks(updatedDeckList);
+  const removeDeck = async (deck) => {
+    const removedDeck = await decksAPI.deleteDeck(deck._id);
+    const updatedDeck= userDecks.filter(deck => removedDeck._id !== deck._id);
+    setUserDecks(updatedDeck);
   };
 
   return (
@@ -111,6 +114,7 @@ export default function FlashCardPage() {
     <br />
     <div className="FlashCard">
       <SideBar
+        allCards={allCards}
         userDecks={userDecks}
         setUserDecks={setUserDecks}
         removeDeck={removeDeck}

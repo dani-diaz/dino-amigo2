@@ -4,17 +4,17 @@ import "../Flashcard/Card.css";
 
 export default function Card({
   currentCard,
-  cardNumber,
   deleteCard,
   updateCard,
   setCardSide,
+  selectedDeck,
 }) {
   const [editCard, setEditCard] = useState(false);
 
   const editToggle = () => {
     setEditCard(!editCard);
   };
-
+   console.log('car', currentCard);
   return (
     <div className="card-section">
       {editCard === false ? (
@@ -36,7 +36,7 @@ export default function Card({
           currentCard={currentCard}
           setEditCard={setEditCard}
           updateCard={updateCard}
-          cardNumber={cardNumber}
+          selectedDeck={selectedDeck}
         />
       )}
     </div>

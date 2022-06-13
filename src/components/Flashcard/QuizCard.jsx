@@ -6,9 +6,10 @@ export default function QuizCard({
   questionNumber,
   cardSide,
   setCardSide,
+  card,
 }) {
   const [cardContent, setCardContent] = useState(
-    selectedDeck.content[questionNumber]
+    // selectedDeck.content[questionNumber]
   );
 
   useEffect(() => {
@@ -29,14 +30,14 @@ export default function QuizCard({
         <button className="flip-card-button" onClick={flipCard} >➰</button>
       </div>
       <div className="quiz-card-content">
-        {selectedDeck.content.length === 0 ? (
+        {selectedDeck.flashcards.length === 0 ? (
           <p>This deck is empty</p>
         ) : (
           <div>
             {cardSide === "front" ? (
-              <p>{cardContent.front}</p>
+              <p>{card.front}</p>
             ) : (
-              <p>{cardContent.back}</p>
+              <p>{card.back}</p>
             )}
           </div>
         )}

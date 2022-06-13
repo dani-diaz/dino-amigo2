@@ -2,6 +2,7 @@ import { useState } from "react";
 import { GoTrashcan } from "react-icons/go";
 import { BsBoxArrowInRight } from "react-icons/bs";
 import "../Deck/Deck.css"
+import * as decksAPI from '../../utilities/decks-api';
 
 export default function Deck({
   deck,
@@ -14,8 +15,9 @@ export default function Deck({
   setQuestionNumber,
   setCardSide,
 }) {
-  const [deckTitle, setDeckTitle] = useState(deck.data.name);
+  const [deckTitle, setDeckTitle] = useState('');
   const [changingName, setChangingName] = useState(false);
+  const [selDeck, setSelDeck] = useState();
 
  
   const changeDeckName = () => {
@@ -27,36 +29,32 @@ export default function Deck({
   };
 
 
-  const titleSubmit = () => {
+  const titleSubmit = async () => {
+    console.log('hello');
     setChangingName(false);
-    const filteredDecks = userDecks.filter(
-      (userDeck) => userDeck.id !== deck.id
-    );
-    const newDeckData = {
-      id: deck.id,
-      data: { name: deckTitle },
-      content: deck.content,
-    };
-    const index = newDeckData.id;
-    filteredDecks.splice(index, 0, newDeckData);
-    setUserDecks(filteredDecks);
-  };
 
+    const deck = await decksAPI.createDeck(deckTitle);
+    setUserDecks([...userDecks, deck])
+    setSelDeck(deck)
+  };
+console.log(changingName);
   return (
     <div className="deck" key={`deck ${deck.id}`}>
       {changingName === false ? (
         <p onClick={changeDeckName} className="deck-title">
-          {deckTitle}
+          {deck.deckTitle || "click here"}
         </p>
       ) : (
         <div className="edit-deck">
           <input
+          placeholder="wheres deck name"
             className="edit-deck-name"
             type="text"
             value={deckTitle}
+            name="deckTitle"
             onChange={titleChange}
           ></input>
-          <button className="save-deck" onClick={titleSubmit} type="submit">
+          <button className="save-deck" onClick={titleSubmit} >
             Save
           </button>
         </div>
@@ -83,6 +81,7 @@ export default function Deck({
         <BsBoxArrowInRight
           className="view-deck-button"
           onClick={() => {
+
             setQuestionNumber(0);
             setCardSide("front");
             setSelectedDeck(deck);
