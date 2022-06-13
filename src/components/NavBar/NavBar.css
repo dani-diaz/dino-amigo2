@@ -1,0 +1,9 @@
+img.dinologo {
+    width: 62px;
+    height: 44px;
+    margin-left: 80px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+

@@ -47,7 +47,7 @@ console.log(changingName);
       ) : (
         <div className="edit-deck">
           <input
-          placeholder="wheres deck name"
+          placeholder="deck name here"
             className="edit-deck-name"
             type="text"
             value={deckTitle}
