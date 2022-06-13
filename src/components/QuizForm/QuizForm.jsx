@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import "./QuizForm.css";
 import { useLocation } from 'react-router-dom';
-
+import { Link } from "react-router-dom";
 
 
 
@@ -52,6 +52,7 @@ useEffect(() => {
 				</>
 			)}
 		</div>}
+		<Link to="/lessons"><img className="goback-button" src="https://i.imgur.com/tVxl3eC.png" alt="" /> </Link>
 		</body>
 	);
 }

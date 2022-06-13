@@ -1,13 +1,13 @@
 export const lessons = [
   {number: '📕  Lesson #1',
     title: 'Los Colores', 
-  video: "https://www.youtube.com/embed/8yuiUvi568I?start=07&end=440",
+  video: "https://www.youtube.com/embed/8yuiUvi568I?start=07&end=84",
   lessonImage: "https://i.imgur.com/ptC4St1.png"
   }, 
 
   {number: '📘 Lesson #2',
     title: 'Los Animales', 
-  video: "https://www.youtube.com/embed/8yuiUvi568I?start=170&end=200",
+  video: "https://www.youtube.com/embed/8yuiUvi568I?start=169&end=226",
   lessonImage: "https://i.imgur.com/ptC4St1.png"	  
   }, 
 
